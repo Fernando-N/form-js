@@ -1,0 +1,138 @@
+:root {
+  --text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+main {
+  width: 800px;
+  height: 402px;
+  background: url("assets/bg-repeat.jpg") center center repeat ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+
+.text-section {
+  width: 290px;
+  margin-right: 72px;
+}
+
+.text-section h1 {
+  color: var(--text-color);
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 11px;
+}
+
+.text-section p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.form-section {
+  width: 340px;
+  height: 378px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-color);
+  position: relative;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+}
+
+
+.form-section form input {
+  width: 298px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.form-section form input.active {
+  margin-bottom: 0;
+}
+
+
+.form-section form .required-text {
+  color: #F52E2E;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  display: none;
+}
+
+ .form-section form .required-text.active {
+  
+  display: block;
+} 
+
+::placeholder {
+  padding: 10px;
+}
+
+:focus {
+  outline: none;
+}
+
+.form-section form textarea {
+  height: 100px;
+  resize: none;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.form-section form .text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.form-section form button {
+  height: 41px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3ccc87;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+

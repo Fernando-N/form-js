@@ -5,7 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="text-section">
+        <h1>
+          Ficou com dúvida? <br />
+          nos mande uma mensagem
+        </h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </section>
+      <section class="form-section">
+        <form action="">
+          <label for="full-name">Nome</label>
+          <input
+            type="text"
+            name="user-name"
+            id="full-name"
+            placeholder="Nome completo *"
+          />
+          <p class="required-text">campo obrigatório</p>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email *" />
+          <p class="required-text">campo obrigatório</p>
+
+          <label for="tel">Telefone</label>
+          <input type="tel" name="tel" id="tel" placeholder="Telefone *" />
+          <p class="required-text">campo obrigatório</p>
+
+          <label for="message">Mensagem</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensagem *"
+          ></textarea>
+          <p class="required-text">campo obrigatório</p>
+
+          <p class="text">*campos obrigatórios</p>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
