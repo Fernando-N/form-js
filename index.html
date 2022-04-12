@@ -29,6 +29,7 @@
         <form action="">
           <label for="full-name">Nome</label>
           <input
+            class="required"
             type="text"
             name="user-name"
             id="full-name"
@@ -37,15 +38,28 @@
           <p class="required-text">campo obrigatório</p>
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email *" />
+          <input
+            class="required"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email *"
+          />
           <p class="required-text">campo obrigatório</p>
 
           <label for="tel">Telefone</label>
-          <input type="tel" name="tel" id="tel" placeholder="Telefone *" />
+          <input
+            class="required"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Telefone *"
+          />
           <p class="required-text">campo obrigatório</p>
 
           <label for="message">Mensagem</label>
           <textarea
+            class="required"
             name="message"
             id="message"
             cols="30"
